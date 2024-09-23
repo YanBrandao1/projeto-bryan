@@ -1,0 +1,35 @@
+
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-bege);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 59.08px;
+}
+
+
+.sobremimImageBox{
+    width: 434.92px;
+    height: 465px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.sobremimTextBox {
+    color: var(--cor-branca);
+    width: 746px;
+    height: 477px;
+    row-gap: 58px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sobremimTextBox h1 {
+    align-self: center;
+}

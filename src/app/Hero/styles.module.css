@@ -1,0 +1,24 @@
+
+
+
+.backgroundContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/teste.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    row-gap: 10px;
+}
+

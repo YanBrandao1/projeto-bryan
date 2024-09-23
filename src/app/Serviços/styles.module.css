@@ -1,0 +1,25 @@
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-bege);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 48px;
+}
+
+
+.fileira_1 {
+    width: 1239px;
+    height: 210px;
+    display: flex;
+    column-gap: 48px;
+}
+
+.fileira_2 {
+    width: 1239px;
+    height: 210px;
+    display: flex;
+    column-gap: 48px;
+  }

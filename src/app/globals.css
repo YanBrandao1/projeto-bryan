@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-bege: #C5A262;
+    --cor-cinza: #969696;
+    --cor-branca:#EAEAEA;
+    --cor-preta: #191919;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p{
+    font-size: 22px;
+}
