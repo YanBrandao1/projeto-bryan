@@ -11,6 +11,9 @@ export default function Servicos (){
     return (
         <>
             <section className={styles.background}>
+            <h1 className={styles.titulo}>
+                PARA CUIDAR DE VOCÊ DE FORMA COMPLETA
+            </h1>
                 <div className={styles.fileira_1}>
                     <Image 
                         src={servico_1}

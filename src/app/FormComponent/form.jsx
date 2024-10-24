@@ -3,15 +3,19 @@ import { useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from "./styles.module.css"
 
-const ContactForm = () => {
+const formKey = process.env.NEXT_PUBLIC_FORM_KEY;
+const ServiceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+
+export default function Form(){
   useEffect(() => {
-    emailjs.init('zsSA6VsvwHM47O6JW');
+    emailjs.init(formKey);
   }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_tg6o09k', 'template_8j3fxes', e.target, 'zsSA6VsvwHM47O6JW')
+    emailjs.sendForm(ServiceId, templateId, e.target, formKey)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -33,6 +37,4 @@ const ContactForm = () => {
       <input type="submit" value="Send" />
     </form>
   );
-};
-
-export default ContactForm;
+}

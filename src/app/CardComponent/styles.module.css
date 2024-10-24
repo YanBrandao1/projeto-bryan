@@ -1,0 +1,29 @@
+
+
+
+.cardBox{
+    display: flex;
+    justify-content: center;
+    
+    background-color: var(--cor-branca);
+    width: 357px;
+    height: 341px;
+    border-radius: 5px;
+}
+
+.centralBox {
+    display: flex;
+    flex-direction: column;
+    width: 309px;
+    height: 277px;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.upperBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
