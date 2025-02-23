@@ -8,6 +8,7 @@ import Card from "./CardComponent/card";
 import Depoimentos from "./Depoimentos/depoimentos";
 import Form from "./FormComponent/form.jsx";
 import Local from "./Local/local";
+import Contato from "./Contato/contato";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Servicos />
       <Depoimentos />
       <Local />
+      <Contato />
    </>
   );
 }

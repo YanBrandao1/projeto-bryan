@@ -1,0 +1,131 @@
+
+.formulario
+{
+    color: var(--cor-branca);
+    width: 610px;
+    height: 597px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.nome
+{
+    width: inherit;
+    height: 44px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.divisorDeConteudo
+{
+    width: inherit;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sexo
+{
+    width: 299px;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dataDeNascimento
+{
+    width: 299px;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.8;
+    color: var(--cor-branca);
+}
+
+.telefone
+{
+    width: 299px;
+    border-radius: 8px;
+}
+
+.email
+{
+    width: 299px;
+    border-radius: 8px;
+}
+
+.objetivos
+{
+    display: flex;
+    cursor: pointer;
+}
+
+.mensagem
+{
+    width: inherit;
+    height: 127px;
+    resize: none;
+    border-radius: 8px;
+}
+
+.botaoDeEnviar
+{
+    width: 289px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #3B3428;
+    color: var(--cor-branca);
+    cursor: pointer;
+    font-size: 18px;
+    border: solid 2px var(--cor-branca);
+}
+
+.botaoDeEnviar:hover
+{
+    background-color: var(--cor-bege);
+}
+
+.padrao
+{
+    background-color: transparent;
+    border: solid 2px var(--cor-branca);
+    color: var(--cor-branca);
+}
+
+.padrao::placeholder
+{
+    color: var(--cor-branca);
+    opacity: 0.8;
+    text-indent: 10px
+}
+
+.buttonBox
+{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dataDeNascimento::-webkit-calendar-picker-indicator
+{
+    background-color: var(--cor-bege);
+    border-radius: 4px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.sexo option
+{
+    color: var(--cor-preta);
+}
+
+.label
+{
+    font-size: 15px;
+    text-align: center;
+    margin: 0 10px 0 30px;
+    align-self: center;
+    opacity: 0.8;
+}

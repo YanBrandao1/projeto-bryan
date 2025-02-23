@@ -15,8 +15,6 @@
     width: 434.92px;
     height: 465px;
     border-radius: 5px 0px 0px 0px;
-    opacity: 0px;
-
 }
 
 .sobremimTextBox {
@@ -24,11 +22,17 @@
     width: 746px;
     height: 477px;
     row-gap: 40px;
-    opacity: 0px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .sobremimTextBox h1 {
     align-self: center;
+    opacity: .85;
+}
+
+.sobremimTextBox p {
+    align-self: center;
+    opacity: .85;
 }
