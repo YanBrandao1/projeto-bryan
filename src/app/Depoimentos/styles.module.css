@@ -1,0 +1,27 @@
+
+
+
+.background{
+    background-color: var(--cor-bege);
+    width: 98.9vw;
+    height: 100vh;
+}
+
+.carousel{
+    width: 1240px;
+}
+
+.card {
+    cursor:grab;
+}
+
+.titulo{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.88px;
+    text-align: center;
+    color: var(--cor-branca);
+    margin-bottom: 70px;
+    text-decoration: underline;
+    opacity: 0.8;
+}

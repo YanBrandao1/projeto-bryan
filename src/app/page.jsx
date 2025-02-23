@@ -5,8 +5,9 @@ import Hero from "./Hero/hero";
 import Sobremim from "./Sobremim/sobremim.jsx";
 import Servicos from "./Serviços/servicos";
 import Card from "./CardComponent/card";
-import Carousel from "./CarouselComponent/carousel";
+import Depoimentos from "./Depoimentos/depoimentos";
 import Form from "./FormComponent/form.jsx";
+import Consultorio from "./Consultorio/consultorio";
 
 export default function Home() {
 
@@ -14,9 +15,8 @@ export default function Home() {
    <>
       <Sobremim />
       <Servicos />
-      <Carousel />
-      <Map />
-      <Form />
+      <Depoimentos />
+      <Consultorio />
    </>
   );
 }

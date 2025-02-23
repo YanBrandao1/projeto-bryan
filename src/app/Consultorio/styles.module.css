@@ -1,0 +1,45 @@
+.background{
+    background-color: var(--cor-bege);
+    width: 98.9vw;
+    height: 100vh;
+}
+
+
+.flexbox
+{
+   display: flex;
+   justify-content: center;
+   column-gap: 106px;
+}
+.titulo{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.88px;
+    text-align: center;
+    color: var(--cor-branca);
+    margin-bottom: 70px;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.localizacaoBox
+{
+    width: 370px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--cor-branca);
+}
+
+.consultorioImgsBox
+{
+    display: flex;
+    column-gap: 24px;
+}
+
+.enderecoBox
+{
+    display: flex;
+    column-gap: 10px;
+}

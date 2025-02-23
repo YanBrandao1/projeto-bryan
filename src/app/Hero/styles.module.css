@@ -3,7 +3,7 @@
 
 .backgroundContainer {
     display: flex;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     background-image: url('/images/teste.png');
     background-size: cover;

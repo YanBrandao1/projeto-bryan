@@ -1,7 +1,7 @@
 
 
 .background{
-    width: 100vw;
+    width: 98.9vw;
     height: 100vh;
     background-color: var(--cor-bege);
     display: flex;
@@ -23,11 +23,10 @@
     color: var(--cor-branca);
     width: 746px;
     height: 477px;
-    row-gap: 58px;
+    row-gap: 40px;
     opacity: 0px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .sobremimTextBox h1 {
