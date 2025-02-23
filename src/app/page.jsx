@@ -7,16 +7,17 @@ import Servicos from "./Serviços/servicos";
 import Card from "./CardComponent/card";
 import Depoimentos from "./Depoimentos/depoimentos";
 import Form from "./FormComponent/form.jsx";
-import Consultorio from "./Consultorio/consultorio";
+import Local from "./Local/local";
 
 export default function Home() {
 
   return (
    <>
+      <Hero />
       <Sobremim />
       <Servicos />
       <Depoimentos />
-      <Consultorio />
+      <Local />
    </>
   );
 }

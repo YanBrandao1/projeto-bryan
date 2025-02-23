@@ -5,7 +5,7 @@ import SobremimImage from '../../../public/images/sobremim-image.png'
 export default function Sobremim () {
     return (
         <>
-            <section className={styles.background}>
+            <section id="Sobremim" className={styles.background}>
                 <div className={styles.sobremimImageBox}>
                     <Image
                         src={SobremimImage}

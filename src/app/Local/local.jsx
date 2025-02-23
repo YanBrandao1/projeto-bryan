@@ -5,11 +5,11 @@ import styles from "./styles.module.css";
 import Image from "next/image";
 import IconeMapa from "../../../public/images/Pequeno-icone-mapa.png"
 
-export default function Consultorio()
+export default function Local()
 {
     return(
         <>
-            <section className={styles.background}>
+            <section id="Local" className={styles.background}>
                 <h1 className={styles.titulo}>CONHEÇA NOSSO CONSULTÓRIO</h1>
                 <div className={styles.flexbox}>
                     <div className={styles.consultorioImgsBox}>

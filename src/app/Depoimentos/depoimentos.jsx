@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 export default function Depoimentos() {
 
     return(
-        <section className={styles.background}>
+        <section id="Depoimentos" className={styles.background}>
             <h1 className={styles.titulo}>DEPOIMENTOS CHEIOS DE GRATIDÃO E ALEGRIA</h1>
             <Swiper className={styles.carousel}
             modules={[Navigation, Pagination, Scrollbar, A11y]}
