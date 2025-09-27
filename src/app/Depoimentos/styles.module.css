@@ -1,27 +1,42 @@
-
-
-
-.background{
+.background {
     background-color: var(--cor-bege);
-    width: 98.9vw;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
 }
 
-.carousel{
-    width: 1240px;
+.carousel {
+    width: 100%;
+    max-width: 1240px;
+    padding-bottom: 60px; /* espaço para paginação */
 }
 
 .card {
-    cursor:grab;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
 }
 
-.titulo{
-    font-size: 36px;
+.titulo {
+    font-size: 2.2rem;
     font-weight: 600;
-    line-height: 43.88px;
     text-align: center;
     color: var(--cor-branca);
-    margin-bottom: 150px;
+    margin-bottom: 60px;
     text-decoration: underline;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+/* estilizando os bullets da paginação do Swiper */
+.swiper-pagination-bullet {
+    background: var(--cor-branca);
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--cor-marrom);
+    opacity: 1;
 }

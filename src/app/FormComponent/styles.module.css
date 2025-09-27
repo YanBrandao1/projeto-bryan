@@ -1,77 +1,82 @@
-
-.formulario
-{
+.formulario {
     color: var(--cor-branca);
-    width: 610px;
-    height: 597px;
+    width: 100%;
+    max-width: 610px; /* limite no desktop */
+    min-height: 597px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    padding: 10px;
 
 }
 
-.nome
-{
-    width: inherit;
-    height: 44px;
-    border-radius: 8px;
+/* campos padrão */
+.padrao {
     background-color: transparent;
+    border: solid 2px var(--cor-branca);
+    color: var(--cor-branca);
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
-.divisorDeConteudo
-{
-    width: inherit;
-    height: 44px;
+.padrao::placeholder {
+    color: var(--cor-branca);
+    opacity: 0.8;
+}
+
+/* primeira linha de inputs */
+.divisorDeConteudo {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap; /* permite quebra em telas pequenas */
 }
 
-.sexo
-{
-    width: 299px;
+/* inputs dentro do divisor */
+.sexo,
+.dataDeNascimento,
+.telefone,
+.email {
+    flex: 1; /* divide espaço igualmente */
+    min-width: 48%; /* mobile-friendly */
     border-radius: 8px;
-    cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-.dataDeNascimento
-{
-    width: 299px;
-    border-radius: 8px;
-    cursor: pointer;
-    opacity: 0.8;
-    color: var(--cor-branca);
+/* input nome */
+.nome {
+    width: 100%;
+    height: 44px;
 }
 
-.telefone
-{
-    width: 299px;
-    border-radius: 8px;
-}
-
-.email
-{
-    width: 299px;
-    border-radius: 8px;
-}
-
-.objetivos
-{
-    display: flex;
-    cursor: pointer;
-}
-
-.mensagem
-{
-    width: inherit;
-    height: 127px;
+/* textarea */
+.mensagem {
+    width: 100%;
+    min-height: 127px;
     resize: none;
     border-radius: 8px;
 }
 
-.botaoDeEnviar
-{
-    width: 289px;
+/* objetivos */
+.objetivos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* botão */
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.botaoDeEnviar {
+    width: 100%;
+    max-width: 289px;
     height: 52px;
     border-radius: 8px;
     background-color: #3B3428;
@@ -79,53 +84,62 @@
     cursor: pointer;
     font-size: 18px;
     border: solid 2px var(--cor-branca);
+    transition: 0.3s ease;
 }
 
-.botaoDeEnviar:hover
-{
+.botaoDeEnviar:hover {
     background-color: var(--cor-bege);
 }
 
-.padrao
-{
-    background-color: transparent;
-    border: solid 2px var(--cor-branca);
-    color: var(--cor-branca);
-}
-
-.padrao::placeholder
-{
-    color: var(--cor-branca);
+/* label nascimento */
+.label {
+    font-size: 14px;
+    margin: 0 10px 0 5px;
+    align-self: center;
     opacity: 0.8;
-    text-indent: 10px
 }
 
-.buttonBox
-{
-    width: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dataDeNascimento::-webkit-calendar-picker-indicator
-{
+/* date picker */
+.dataDeNascimento::-webkit-calendar-picker-indicator {
     background-color: var(--cor-bege);
     border-radius: 4px;
     padding: 7px;
     cursor: pointer;
 }
 
-.sexo option
-{
+/* opções do select */
+.sexo option {
     color: var(--cor-preta);
 }
 
-.label
+.redesBox
 {
-    font-size: 15px;
-    text-align: center;
-    margin: 0 10px 0 30px;
+    display: flex;
+    justify-self: center;
     align-self: center;
-    opacity: 0.8;
+
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+    .formulario {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .divisorDeConteudo {
+        flex-direction: column;
+    }
+
+    .sexo,
+    .dataDeNascimento,
+    .telefone,
+    .email {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .botaoDeEnviar {
+        max-width: 100%;
+    }
 }

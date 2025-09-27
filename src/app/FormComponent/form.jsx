@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from "./styles.module.css";
+import { TfiInstagram } from "react-icons/tfi";
 
 export default function Form() {
 
@@ -139,6 +140,11 @@ export default function Form() {
           Entrar na lista de espera
         </button>
       </div>
+      <div className={styles.redesBox}>
+            <a href="https://www.instagram.com/bryanstolzenut?utm_source=ig_web_button_share_sheet&igsh=MWk3NWgzYmx3Nms5" target="blank">
+                <TfiInstagram size={35} color="#C5A262"/>
+            </a>
+        </div>
     </form>
   );
 }

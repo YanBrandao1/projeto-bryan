@@ -14,15 +14,19 @@ export default function Depoimentos() {
     return(
         <section id="Depoimentos" className={styles.background}>
             <h1 className={styles.titulo}>DEPOIMENTOS CHEIOS DE GRATIDÃO E ALEGRIA</h1>
-            <Swiper className={styles.carousel}
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={80}
+            <Swiper
+                className={styles.carousel}
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={40}
                 slidesPerView={3}
                 navigation
                 pagination={{ clickable: true }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-    >
+                breakpoints={{
+                    320: { slidesPerView: 1, spaceBetween: 20 },
+                    768: { slidesPerView: 2, spaceBetween: 30 },
+                    1024: { slidesPerView: 3, spaceBetween: 40 },
+                }}
+            >
                 <SwiperSlide className={styles.card}><Card nome={'Lucas Gonçalves Almeida'} descricao={'38 anos'} depoimento={'Fiz acompanhamento com o nutricionista durante 6 meses, consegui perder 10kg, notei uma grande diferença no meu físico no espelho. Fiquei muito satisfeito com os resultados !'}/></SwiperSlide>
 
                 <SwiperSlide className={styles.card}><Card nome={'Flávia Bittencourt'} descricao={'32 anos'} depoimento={'Fiz acompanhamento com o nutricionista durante 6 meses, consegui perder 10kg, notei uma grande diferença no meu físico no espelho. Fiquei muito satisfeito com os resultados !'}/></SwiperSlide>

@@ -14,16 +14,18 @@ export default function Local()
                 <div className={styles.flexbox}>
                     <div className={styles.consultorioImgsBox}>
                         <Image 
-                            src={Consultorio1}
-                            width={370}
-                            height={370}
-                            alt="Logotipo"/>
-                        <Image 
-                            src={Consultorio2}
-                            width={370}
-                            height={370}
-                            alt="Logotipo"
+                        src={Consultorio1}
+                        width={370}
+                        height={370}
+                        alt="Foto interna do consultório"
                         />
+                        <Image 
+                        src={Consultorio2}
+                        width={370}
+                        height={370}
+                        alt="Foto interna do consultório"
+                        />
+
                     </div>
                     <div className={styles.localizacaoBox}>
                         <h2>Nossa Localização</h2>
@@ -34,7 +36,7 @@ export default function Local()
                                 height={32}
                                 alt="Pequeno ícone de mapa"
                             />
-                            <address>Rua Alceu Amoroso Lima, 276, Salvador/BA. CEP: 41820-770.</address>
+                            <address style={{ fontStyle: "normal" }}>Rua Alceu Amoroso Lima, 276, Salvador/BA. CEP: 41820-770.</address>
                         </div>
                         <Map />
                     </div>

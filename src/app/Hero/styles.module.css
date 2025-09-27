@@ -1,83 +1,140 @@
-.backgroundContainer {
-    width: 98.9vw;
+.backgroundContainer 
+{
+    width: 99.9vw;
     height: 100vh;
     background-image: url('/images/HeroBackgroundImage.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    position: relative; 
+}
+.backgroundHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-preta);
+  height: 85px;
+  width: 100vw;
+  color: var(--cor-branca);
+  padding: 0 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.backgroundHeader ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.backgroundHeader a {
+  text-decoration: none;
+  color: var(--cor-branca);
+}
+
+.manta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .backgroundHero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 500px;
-    row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  row-gap: 10px;
+  text-align: center;
 }
 
-.backgroundHeader
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--cor-preta);
-    height: 85px;
-    width: 98.9vw;
-    color: var(--cor-branca);
-    column-gap: 300px;
+/* ========= BOTÃO MENU ========= */
+.menuButton {
+  background: none;
+  border: none;
+  color: var(--cor-branca);
+  cursor: pointer;
+  display: none; /* escondido no desktop */
 }
 
-.backgroundHeader ul
-{
-    list-style: none;
-    display: flex;
-    column-gap: 20px;
+/* ========= NAV ========= */
+.navMenu {
+  display: flex;
 }
 
-.backgroundHeader a
-{
-    text-decoration: none;
-    color: var(--cor-branca);
+.navMenu ul li:hover {
+  background-color: rgba(248, 245, 245, 0.65);
+  border-radius: 3px;
+  padding: 2px 6px;
 }
 
-.manta
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ========= RESPONSIVO ========= */
+
+/* Tablets e celulares */
+@media (max-width: 1024px) {
+  .menuButton {
+    display: block; /* mostra o botão hambúrguer */
+    z-index: 1100;
+  }
+
+  .navMenu {
+    display: none; /* esconde menu padrão */
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 85px;
     right: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-}
-
-.backgroundHeader nav
-{
-    height: 50%;
-
-}
-
-.backgroundHeader nav ul li:hover
-{
-    background-color: rgba(248, 245, 245, 0.65);
-    border-radius: 3px;
-}
-
-.backgroundHeader nav ul
-{
-    height: 100%;
-}
-.backgroundHeader nav ul li
-{
-    display: flex;
+    background-color: var(--cor-preta);
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .navMenu.open {
+    display: flex; /* abre menu quando clica */
+  }
+
+  .navMenu ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navMenu ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .backgroundHero h1 {
+    font-size: 36px !important;
+  }
+
+  .backgroundHero h2 {
+    font-size: 18px !important;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 600px) {
+  .backgroundHero h1 {
+    font-size: 28px !important;
+  }
+
+  .backgroundHero h2 {
+    font-size: 16px !important;
+  }
+
+  .backgroundHero img {
+    width: 70px;
+    height: 70px;
+  }
 }

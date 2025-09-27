@@ -8,8 +8,7 @@ export default function Map () {
     return (
         <>
         <iframe
-            width="370"
-            height="208"
+
             style={{border: 0}}
             loading="lazy"
             allowFullScreen
